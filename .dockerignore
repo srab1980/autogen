@@ -1,0 +1,9 @@
+.git
+.gitignore
+.env
+.venv
+autogenstudio-pypi-venv
+autogen/python/packages/autogen-studio/frontend/node_modules
+__pycache__
+*.pyc
+temp_gallery.json
