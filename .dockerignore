@@ -1,14 +1,10 @@
 .git
 .env
 .venv
-.git
-.env
-.venv
 __pycache__
 *.pyc
 temp_gallery.json
-# dist
-# build
-# node_modules
-# **/node_modules
-# autogenstudio-pypi-venv
+dist
+build
+node_modules
+autogenstudio-pypi-venv

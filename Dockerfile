@@ -1,7 +1,10 @@
 # Stage 1: Build Frontend
 FROM node:18-alpine AS frontend-builder
 # Copy entire context to debug/ensure availability
+# Copy entire context to debug/ensure availability
 COPY . /app/source/
+# DEBUG: List all files to see what was copied
+RUN find /app/source -maxdepth 2 -not -path '*/.*'
 WORKDIR /app/source/autogen/python/packages/autogen-studio/frontend
 RUN npm install
 RUN npm run build
@@ -16,8 +19,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy backend code
-COPY autogen/python/packages/autogen-studio /app/autogen-studio
+# Copy backend code FROM THE SOURCE STAGE (ensuring we have it)
+COPY --from=frontend-builder /app/source/autogen/python/packages/autogen-studio /app/autogen-studio
 
 # Copy built frontend assets to the python package UI directory
 # Ensure the target directory exists
