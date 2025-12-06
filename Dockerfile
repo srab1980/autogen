@@ -1,10 +1,8 @@
 # Stage 1: Build Frontend
 FROM node:18-alpine AS frontend-builder
-WORKDIR /app/frontend
-
-# Copy frontend source
-COPY autogen/python/packages/autogen-studio/frontend /app/frontend/
-WORKDIR /app/frontend
+# Copy entire context to debug/ensure availability
+COPY . /app/source/
+WORKDIR /app/source/autogen/python/packages/autogen-studio/frontend
 RUN npm install
 RUN npm run build
 
@@ -25,7 +23,7 @@ COPY autogen/python/packages/autogen-studio /app/autogen-studio
 # Ensure the target directory exists
 RUN mkdir -p /app/autogen-studio/autogenstudio/web/ui
 # Overlay built assets
-COPY --from=frontend-builder /app/frontend/public /app/autogen-studio/autogenstudio/web/ui
+COPY --from=frontend-builder /app/source/autogen/python/packages/autogen-studio/frontend/public /app/autogen-studio/autogenstudio/web/ui
 
 # Install the package
 WORKDIR /app/autogen-studio
