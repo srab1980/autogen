@@ -3,10 +3,9 @@ FROM node:18-alpine AS frontend-builder
 WORKDIR /app/frontend
 
 # Copy frontend source
-COPY autogen/python/packages/autogen-studio/frontend/package*.json ./
+COPY autogen/python/packages/autogen-studio/frontend /app/frontend/
+WORKDIR /app/frontend
 RUN npm install
-
-COPY autogen/python/packages/autogen-studio/frontend ./
 RUN npm run build
 
 # Stage 2: Final Image
