@@ -44,3 +44,22 @@ This guide explains how to deploy your modified AutoGen Studio application to Fl
     ```powershell
     fly open
     ```
+
+## Alternative: Deploy directly from GitHub
+Since we have pushed the `Dockerfile` to your repository, you can deploy directly from there.
+
+1.  **Create App** (if not done):
+    ```powershell
+    fly apps create my-autogen-studio
+    ```
+
+2.  **Deploy Command**:
+    ```powershell
+    fly deploy https://github.com/srab1980/autogen.git
+    ```
+    *Or configure "Continuous Deployment" in the Fly.io Dashboard to auto-deploy when you push changes to main.*
+
+3.  **Important**: You must still set the secrets!
+    ```powershell
+    fly secrets set OPENAI_API_KEY=sk-... OPENAI_BASE_URL=https://api.openai.com/v1 -a my-autogen-studio
+    ```
