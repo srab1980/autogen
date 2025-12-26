@@ -43,4 +43,6 @@ COPY autogen04202.db /app/data/autogen04202.db
 
 
 # Command to run the application
-CMD ["autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081"]
+# Command to run the application
+# We use shell form to allow variable expansion for PORT (default 8081)
+CMD autogenstudio ui --host 0.0.0.0 --port ${PORT:-8081}
