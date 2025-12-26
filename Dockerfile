@@ -16,8 +16,8 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Copy application files (optional - the app works standalone)
-# These are utility scripts and can be mounted as volumes if needed
+# Copy application files
+COPY main.py /app/
 
 # Expose the port
 EXPOSE 8081
@@ -30,5 +30,5 @@ ENV AUTOGENSTUDIO_APPDIR="/app/data"
 # Create a directory for data
 RUN mkdir -p /app/data
 
-# Command to run the application
-CMD ["autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081"]
+# Command to run the application using the configurable entry point
+CMD ["python", "main.py"]
