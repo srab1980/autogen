@@ -9,3 +9,6 @@ build/
 .vscode/
 .idea/
 temp_gallery.json
+
+.venv_new/
+.venv_old/

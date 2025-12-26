@@ -1,0 +1,492 @@
+INFO:     Loading environment from 'C:\Users\srab1.SAMEH-NVME\.autogenstudio\temp_env_vars.env'
+C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2025-12-20 15:34:47.809 | INFO     | autogenstudio.web.initialization:__init__:39 - Initializing application data folder: C:\Users\srab1.SAMEH-NVME\.autogenstudio 
+2025-12-20 15:34:47.809 | INFO     | autogenstudio.web.auth.manager:__init__:26 - Initialized auth manager with provider: none
+INFO:     Started server process [27164]
+INFO:     Waiting for application startup.
+2025-12-20 15:34:47.845 | INFO     | autogenstudio.database.db_manager:initialize_database:96 - Schema changes detected, but auto_upgrade is disabled. Skipping migration check.
+2025-12-20 15:34:47.845 | INFO     | autogenstudio.database.db_manager:initialize_database:97 - To enable automatic migrations, set auto_upgrade=True
+2025-12-20 15:34:47.846 | INFO     | autogenstudio.web.app:lifespan:39 - Application startup complete. Navigate to http://127.0.0.1:8081
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8081 (Press CTRL+C to quit)
+INFO:     127.0.0.1:4253 - "GET / HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:4253 - "GET /webpack-runtime-2127e18b0eac61f818d1.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:30536 - "GET /framework-d76dbb490f52c09d0d8b.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /app-71ca239b379a47c78606.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:30536 - "GET /page-data/index/page-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /page-data/app-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /5c0b189e-e8c267a8f6d19d4c3625.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:30536 - "GET /e8c4b161-dc0e59e516961034a62e.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:4253 - "GET /79c4af9bb6082a30e61c738080d3674d6df775fb-288c23133fd0b229b24a.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:22844 - "GET /f155e64ad0e6e3242bb9ccdc390cc74ee6ee412a-257de7da11c225732e69.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57584 - "GET /c24f6baff8bb5705476139e50ba2e4fe62797429-fcf68631c2487b667822.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:2921 - "GET /8ba350677d7259fe4668e5efb7ab16d97127b58c-f3aa2fd64c6551d78fac.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /49bd340fcde114e22545b057521d92b892d3adc7-94091afd7ffb7f00f37c.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:4253 - "GET /50b6c9a48db3f2c12a9112e6cf56a481ffb5324c-845aa733b59a9d38ecae.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:22844 - "GET /aedc38774473df331eb6dcbf7c0cc919f6d02efc-fde7c1ca9cb218ac9744.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /b82788f2cde183498e3bd32c4ca2ee816d96851b-517107eb30f2ecc1bd53.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:22844 - "GET /908a06985ad6e72a3641d70376edf87b0e863303-83119cf7d890f15dd061.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /component---src-pages-index-tsx-f24df36a0b320541b45a.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /api/version HTTP/1.1" 200 OK
+INFO:     127.0.0.1:22844 - "GET /api/auth/type HTTP/1.1" 200 OK
+INFO:     127.0.0.1:7986 - "GET /manifest.webmanifest HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:22844 - "GET /api/sessions/?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "GET /api/teams/?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "GET /api/sessions/41/runs?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:22844 - "GET /api/teams/1?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:4253 - "GET /api/sessions/?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:22844 - "GET /page-data/deploy/page-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57487 - "GET /page-data/build/page-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:4253 - "GET /page-data/gallery/page-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:2921 - "GET /page-data/mcp/page-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:2921 - "GET /page-data/settings/page-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:2921 - "POST /api/sessions/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2921 - "GET /api/sessions/42/runs?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:4253 - "GET /api/teams/1?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57487 - "GET /api/sessions/?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52749 - "POST /api/runs/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58774 - "WebSocket /api/ws/runs/59?token=null" [accepted]
+INFO:     connection open
+2025-12-20 15:35:26.113 | INFO     | autogenstudio.web.routes.ws:run_websocket:77 - WebSocket connection established for run 59
+2025-12-20 15:35:26.114 | INFO     | autogenstudio.web.routes.ws:run_websocket:87 - Received start request for run 59
+C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_core\_component_config.py:252: UserWarning: 
+\u26a0\ufe0f  SECURITY WARNING \u26a0\ufe0f
+Loading a FunctionTool from config will execute code to import the provided global imports and and function code.
+Only load configs from TRUSTED sources to prevent arbitrary code execution.
+  instance = component_class._from_config(validated_config)  # type: ignore
+Error processing publish message for assistant_agent_c9849db9-f376-4dba-8323-0fbd97d3fbb3/c9849db9-f376-4dba-8323-0fbd97d3fbb3
+Traceback (most recent call last):
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1532, in request
+    response = await self._client.send(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\srab1.SAMEH-NVME\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_core\_single_threaded_agent_runtime.py", line 606, in _on_message
+    return await agent.on_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_core\_base_agent.py", line 119, in on_message
+    return await self.on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\teams\_group_chat\_sequential_routed_agent.py", line 67, in on_message_impl
+    return await super().on_message_impl(message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_core\_routed_agent.py", line 485, in on_message_impl
+    return await h(self, message, ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_core\_routed_agent.py", line 268, in wrapper
+    return_value = await func(self, message, ctx)  # type: ignore
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\teams\_group_chat\_chat_agent_container.py", line 84, in handle_request
+    async for msg in self._agent.on_messages_stream(self._message_buffer, ctx.cancellation_token):
+    ...<4 lines>...
+            await self._log_message(msg)
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 953, in on_messages_stream
+    async for inference_output in self._call_llm(
+    ...<15 lines>...
+            yield inference_output
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 1107, in _call_llm
+    model_result = await model_client.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_ext\models\openai\_openai_client.py", line 676, in create
+    result: Union[ParsedChatCompletion[BaseModel], ChatCompletion] = await future
+                                                                     ^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2678, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<49 lines>...
+    )
+    ^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1797, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1564, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+Stream error for run 59: APIConnectionError: Connection error.
+Traceback:
+Traceback (most recent call last):
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+
+httpcore.ConnectError: All connection attempts failed
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1532, in request
+    response = await self._client.send(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+
+  File "C:\Users\srab1.SAMEH-NVME\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+
+httpx.ConnectError: All connection attempts failed
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\teams\_group_chat\_chat_agent_container.py", line 84, in handle_request
+    async for msg in self._agent.on_messages_stream(self._message_buffer, ctx.cancellation_token):
+    ...<4 lines>...
+            await self._log_message(msg)
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 953, in on_messages_stream
+    async for inference_output in self._call_llm(
+    ...<15 lines>...
+            yield inference_output
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 1107, in _call_llm
+    model_result = await model_client.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_ext\models\openai\_openai_client.py", line 676, in create
+    result: Union[ParsedChatCompletion[BaseModel], ChatCompletion] = await future
+                                                                     ^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2678, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<49 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1797, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1564, in request
+    raise APIConnectionError(request=request) from err
+
+openai.APIConnectionError: Connection error.
+
+Traceback (most recent call last):
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\autogen\python\packages\autogen-studio\autogenstudio\web\managers\connection.py", line 119, in start_stream
+    async for message in team_manager.run_stream(
+    ...<30 lines>...
+                final_result = message.model_dump()
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\autogen\python\packages\autogen-studio\autogenstudio\teammanager\teammanager.py", line 130, in run_stream
+    async for message in team.run_stream(task=task, cancellation_token=cancellation_token):
+    ...<11 lines>...
+            yield event
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\teams\_group_chat\_base_group_chat.py", line 522, in run_stream
+    raise RuntimeError(str(message.error))
+RuntimeError: APIConnectionError: Connection error.
+Traceback:
+Traceback (most recent call last):
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_async\connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_backends\auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_backends\anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+
+httpcore.ConnectError: All connection attempts failed
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1532, in request
+    response = await self._client.send(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+
+  File "C:\Users\srab1.SAMEH-NVME\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+
+httpx.ConnectError: All connection attempts failed
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\teams\_group_chat\_chat_agent_container.py", line 84, in handle_request
+    async for msg in self._agent.on_messages_stream(self._message_buffer, ctx.cancellation_token):
+    ...<4 lines>...
+            await self._log_message(msg)
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 953, in on_messages_stream
+    async for inference_output in self._call_llm(
+    ...<15 lines>...
+            yield inference_output
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_agentchat\agents\_assistant_agent.py", line 1107, in _call_llm
+    model_result = await model_client.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\autogen_ext\models\openai\_openai_client.py", line 676, in create
+    result: Union[ParsedChatCompletion[BaseModel], ChatCompletion] = await future
+                                                                     ^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2678, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<49 lines>...
+    )
+    ^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1797, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\openai\_base_client.py", line 1564, in request
+    raise APIConnectionError(request=request) from err
+
+openai.APIConnectionError: Connection error.
+
+INFO:     127.0.0.1:23049 - "GET /page-data/app-data.json HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:23049 - "GET /a4665654dda7b311fa980ed4e505bbee5fd77197-542b74e5d01593b75328.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:23049 - "GET /94d957f71cf40e43e36d38f0785237d6d7a2346c-125a692c5780145082b6.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:23049 - "GET /ac0c99200517696ae43f560effedf06400c2d888-269143cc5aa8778cf8c9.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:23049 - "GET /fabc42e99a8596640f645875d0a5301ab9478215-866dc9b70df935e993ea.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:23049 - "GET /component---src-pages-gallery-tsx-f54a00e967d0980a85cb.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:23049 - "GET /api/gallery/?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:23049 - "GET /api/gallery/?user_id=guestuser@gmail.com HTTP/1.1" 200 OK
+INFO:     127.0.0.1:23049 - "GET /images/bg/layeredbg.svg HTTP/1.1" 304 Not Modified

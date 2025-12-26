@@ -1,0 +1,16 @@
+INFO:     Loading environment from 'C:\Users\srab1\.autogenstudio\temp_env_vars.env'
+C:\Users\srab1\Downloads\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2025-12-16 14:46:08.003 | INFO     | autogenstudio.web.initialization:__init__:39 - Initializing application data folder: C:\Users\srab1\.autogenstudio 
+2025-12-16 14:46:08.003 | INFO     | autogenstudio.web.auth.manager:__init__:26 - Initialized auth manager with provider: none
+INFO:     Started server process [29592]
+INFO:     Waiting for application startup.
+2025-12-16 14:46:08.274 | INFO     | autogenstudio.web.app:lifespan:39 - Application startup complete. Navigate to http://127.0.0.1:8081
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8081): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+2025-12-16 14:46:08.276 | INFO     | autogenstudio.web.app:lifespan:51 - Cleaning up application resources...
+2025-12-16 14:46:08.278 | INFO     | autogenstudio.database.db_manager:close:367 - Closing database connections...
+2025-12-16 14:46:08.280 | INFO     | autogenstudio.database.db_manager:close:371 - Database connections closed successfully
+2025-12-16 14:46:08.280 | INFO     | autogenstudio.web.app:lifespan:53 - Application shutdown complete
+INFO:     Application shutdown complete.

@@ -1,0 +1,28 @@
+Connecting to autogen04202.db...
+Found 3 teams.
+FAIL: Team 1 (RoundRobin Team)
+  Error: Failed to instantiate component: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+FAIL: Team 3 (default_team17)
+  Error: Failed to instantiate component: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+FAIL: Team 4 (Rafeeq2)
+  Error: Failed to instantiate component: Tools cannot be used with a workbench.
+  !!! FOUND THE CULPRIT IN TEAM !!!
+Found 1 galleries.
+FAIL: Gallery 1 Agent 0 (AssistantAgent)
+  Error: Failed to instantiate component: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+FAIL: Gallery 1 Agent 10 (Language Consultant)
+  Error: Failed to instantiate component: The agent name must be a valid Python identifier.
+FAIL: Gallery 1 Agent 11 (Series Bible Agent)
+  Error: Failed to instantiate component: model_info is required when model name is not a valid OpenAI model
+FAIL: Gallery 1 Agent 12 (Youtube Consultant Agent)
+  Error: Failed to instantiate component: model_info is required when model name is not a valid OpenAI model
+FAIL: Gallery 1 Agent 13 (Deep Research Agent)
+  Error: Failed to instantiate component: model_info is required when model name is not a valid OpenAI model
+FAIL: Gallery 1 Agent 14 (Curriculum Engineer Agent)
+  Error: Failed to instantiate component: model_info is required when model name is not a valid OpenAI model
+FAIL: Gallery 1 Agent 15 (Series_Bible_Lock_Agent)
+  Error: Failed to instantiate component: model_info is required when model name is not a valid OpenAI model
+FAIL: Gallery 1 Agent 16 (Scenarist Rewrite Agent (Script v2))
+  Error: Failed to instantiate component: model_info is required when model name is not a valid OpenAI model
+FAIL: Gallery 1 Agent 17 (Rafeeq Exporter Agent)
+  Error: Failed to instantiate component: model_info is required when model name is not a valid OpenAI model

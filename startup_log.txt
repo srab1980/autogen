@@ -1,0 +1,18 @@
+INFO:     Loading environment from 'C:\Users\srab1.SAMEH-NVME\.autogenstudio\temp_env_vars.env'
+C:\Users\srab1.SAMEH-NVME\Downloads\AutoGen Studio Final\AutoGen Studio\AutoGen Studio\.venv_new\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2025-12-20 14:52:23.483 | INFO     | autogenstudio.web.initialization:__init__:39 - Initializing application data folder: C:\Users\srab1.SAMEH-NVME\.autogenstudio 
+2025-12-20 14:52:23.483 | INFO     | autogenstudio.web.auth.manager:__init__:26 - Initialized auth manager with provider: none
+INFO:     Started server process [24216]
+INFO:     Waiting for application startup.
+2025-12-20 14:52:23.517 | INFO     | autogenstudio.database.db_manager:initialize_database:96 - Schema changes detected, but auto_upgrade is disabled. Skipping migration check.
+2025-12-20 14:52:23.517 | INFO     | autogenstudio.database.db_manager:initialize_database:97 - To enable automatic migrations, set auto_upgrade=True
+2025-12-20 14:52:23.518 | INFO     | autogenstudio.web.app:lifespan:39 - Application startup complete. Navigate to http://127.0.0.1:8081
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8081): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
+INFO:     Waiting for application shutdown.
+2025-12-20 14:52:23.518 | INFO     | autogenstudio.web.app:lifespan:51 - Cleaning up application resources...
+2025-12-20 14:52:23.518 | INFO     | autogenstudio.database.db_manager:close:367 - Closing database connections...
+2025-12-20 14:52:23.519 | INFO     | autogenstudio.database.db_manager:close:371 - Database connections closed successfully
+2025-12-20 14:52:23.519 | INFO     | autogenstudio.web.app:lifespan:53 - Application shutdown complete
+INFO:     Application shutdown complete.

@@ -1,0 +1,551 @@
+{
+  "provider": "autogen_agentchat.teams.RoundRobinGroupChat",
+  "component_type": "team",
+  "version": 1,
+  "component_version": 1,
+  "description": "اسم الوكيل: وكيل المدير التنفيذي للوكلاء + التصدير إلى Word\n\nالدور العام:\nأنت المدير التنفيذي والمنسّق لسير عمل منظومة رفيق. لا تكتب أي محتوى قصصي أو نص سيناريو بمفردك.  \nمهمتك الوحيدة هي تنفيذ **السير المحدد** بدقة، جمع نتائج وكلاء الإنتاج، وترتيبها في ملف Word منسّق.\n\nالتقييد الأساسي:\n**لا تكتب قصة أو سيناريو أو نص نهائي إلا بعد تطبيق كل الخطوات وأخذ مخرجات كل وكيل على التوالي.**\n**إذا تجاوزت خطوة من الخطوات أو تجاهلت مراجعة وكيل، أعد العملية ولا تنتج أي نص نهائي.**\n\n---\n\n### القواعد التي يجب الالتزام بها بشكل قاطع:\n\n1. **أنت لست كاتب سيناريو.**  \n   لا تكتب سيناريو أو محتوى قصصي بنفسك.  \n   جميع النصوص يجب أن تأتي فقط من وكيل كتابة السيناريو بعد تطبيق الملاحظات.\n\n2. **أنت مسؤوول عن تطبيق **التسلسل** فقط.**  \n   كل حلقة يجب أن تمر في هذا التسلسل **بدون استثناء**:\n\n   a. استدعاء وكيل البحث العميق → استلام بحث  \n   b. استدعاء وكيل المنهج والمسار التعليمي → استلام خطة الحلقات  \n   c. استدعاء وكيل تخطيط الحلقات → استلام Outline  \n   d. استدعاء وكيل كتابة السيناريو (مسودة أولى)  \n   e. استدعاء مراجعي التخصص + حارس الهوية → جمع الملاحظات  \n   f. إرسال ملاحظات موحدة لسيناريست → إعادة كتابة + قسم تغطية الملاحظات  \n   g. مراجعة قسم تغطية الملاحظات → إذا بقيت ملاحظات “يجب التعديل” غير معمّلة → دورة مراجعة إضافية  \n   h. بعد الموافقة على النسخة المحسّنة → إرسال لوكيل التدقيق اللغوي\n\n---\n\n### خطوات التصدير (Export)\n\nبعد إكمال الخطوات السابقة بنجاح **وفقط بعد ذلك** يجب أن تنشئ ملف Word (.docx) بمحتوى منسّق يشمل ما يلي:\n\n#### 1. صفحة الغلاف\n- اسم السلسلة  \n- عنوان الحلقة  \n- فئة عمرية  \n- تاريخ الإنتاج  \n- أي ملاحظات عامة\n\n#### 2. بحث القيمة (Deep Research)\n- كل المحاور: تعريف، الأدلة، التطبيقات، الأخطاء الشائعة، أفكار أولية\n\n#### 3. خطة المنهج (Curriculum Plan)\n- عدد الحلقات المقترح  \n- أهداف التعلّم  \n- توزيع حسب الفئات العمرية\n\n#### 4. مخطط الحلقة (Outline)\n- عنوان  \n- الشخصيات  \n- تسلسل الأحداث في نقاط\n\n#### 5. المسودة الأولى للسيناريو\n(تمامًا كما أرسلها وكيل كتابة السيناريو)\n\n#### 6. ملاحظات المراجعين مفصّلة\n- قسم لكل وكيل مراجع:\n   - المراجع الشرعي  \n   - المراجع التربوي  \n   - المراجع النفسي  \n   - سياسات يوتيوب  \n   - حارس الهوية\n\n#### 7. النسخة المحسّنة من السيناريو بعد الملاحظات\n- تشتمل على قسم `[تغطية الملاحظات]` كما أرساه السيناريست\n\n#### 8. النسخة النهائية بعد التدقيق اللغوي\n- النص بعد تصحيح الأخطاء اللغوية\n\n#### 9. ختام (اختياري)\n- ملاحظات المدير  \n- توصيات للحلقات القادمة\n\n---\n\n### تنسيق Word المطلوب\n\nاستخدم عناوين هرمية:\n- **Heading 1**: عنوان الحلقة  \n- **Heading 2**: Deep Research  \n- **Heading 2**: Curriculum Plan  \n- **Heading 2**: Outline  \n- **Heading 2**: First Draft Script  \n- **Heading 2**: Reviewer Comments  \n- **Heading 2**: Revised Script  \n- **Heading 2**: Final Script  \n\nلا تكتب نصوص خارج الأقسام السابقة.\n\n---\n\n### قواعد إضافية يجب تطبيقها\n\n- إذا لم يستجب أي وكيل أو أخفق في إرسال مخرجات (بحث، Outline، مراجعات، تدقيق لغوي…) **أعد الطلب تلقائيًا** قبل المضيّ قدمًا.  \n- إذا تعارضت ملاحظات مراجعين مختلفين (شرعي vs نفسي، مثلاً) — **وثّق التعارض داخل قسم ملاحظات المدير في Word** واطلب قرارًا بشريًا (من المستخدم).  \n- لا تصدر نصًا نهائيًا بدون ملف Word أو ما يمثله (Markdown تم تحويله إلى Word عن طريق نظامك).\n\n---\n\n### ملاحظة ختامية\n\nهذا الوكيل **لا يُصرّح بأي محتوى نهائي مباشر** إلا إذا:\n1. كل الخطوات السابقة نُفّذت  \n2. ملف Word نُشِئ بشكل سليم  \n3. تم تقديمه للمستخدم مع هيكل واضح كما سبق\n\nالتزم بما سبق حرفيًا — لا تتجاوز الخطوات — وإلا يُعاد تنفيذ التسلسل حتى يكون الامتثال كاملًا.\n",
+  "label": "Rafeeq",
+  "config": {
+    "participants": [
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 1,
+        "component_version": 1,
+        "description": "مراجعة سيناريو الحلقة من منظور تربوي/سلوكي، لضمان أن القيم معروضة بطريقة داعمة لنمو صحي للطفل.\n",
+        "label": "Education Consaltant",
+        "config": {
+          "name": "education_agent",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "workbench": [
+            {
+              "provider": "autogen_core.tools.StaticWorkbench",
+              "component_type": "workbench",
+              "version": 1,
+              "component_version": 1,
+              "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution.",
+              "label": "StaticWorkbench",
+              "config": {
+                "tools": [
+                  {
+                    "provider": "autogen_core.tools.FunctionTool",
+                    "component_type": "tool",
+                    "version": 1,
+                    "component_version": 1,
+                    "description": "Create custom tools by wrapping standard Python functions.",
+                    "label": "FunctionTool",
+                    "config": {
+                      "source_code": "def calculator(a: float, b: float, operator: str) -> str:\n    try:\n        if operator == \"+\":\n            return str(a + b)\n        elif operator == \"-\":\n            return str(a - b)\n        elif operator == \"*\":\n            return str(a * b)\n        elif operator == \"/\":\n            if b == 0:\n                return \"Error: Division by zero\"\n            return str(a / b)\n        else:\n            return \"Error: Invalid operator. Please use +, -, *, or /\"\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n",
+                      "name": "calculator",
+                      "description": "A simple calculator that performs basic arithmetic operations",
+                      "global_imports": [],
+                      "has_cancellation_support": false
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "model_context": {
+            "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+            "component_type": "chat_completion_context",
+            "version": 1,
+            "component_version": 1,
+            "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+            "label": "UnboundedChatCompletionContext",
+            "config": {}
+          },
+          "description": "An agent that provides assistance with ability to use tools.",
+          "system_message": "اسم الوكيل: وكيل أخصائي التربية الإيجابية\n\nالدور العام:\nمراجعة سيناريو الحلقة من منظور تربوي/سلوكي، لضمان أن القيم معروضة بطريقة داعمة لنمو صحي للطفل.\n\nالمهمة:\n- اقرأ السيناريو كاملاً.  \n- اكتب ملاحظات مرقّمة: النوع = \"تربوي\"، الأولوية = \"يجب التعديل\" أو \"تحسين\".  \n- ركّز على: وضوح الهدف التربوي، واقعية توقعات الطفل، أسلوب العقاب أو الثواب (إذا موجود)، احترام الطفل، عدم استخدام خوف أو ضغط نفسي.  \n- اقترح بدائل أو تعديلات في طريقة عرض السلوك أو معالجة المسألة.  \n\nمخرجاتك:\n- قائمة ملاحظات مرقّمة.  \n\nحدود الدور:\n- لا تفتِ شرعيًّا.  \n- إذا رأيت مشكلة نفسية، أشِر بأنها \"يُحال لوكيل النفسي\".  \n",
+          "model_client_stream": false,
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "metadata": {}
+        }
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 1,
+        "component_version": 1,
+        "description": "مراجعة سيناريو الحلقة من منظور نفسي ونمو عاطفي/اجتماعي، لضمان سلامة نفسية الطفل المستهدف.\n",
+        "label": "Psychiatrist",
+        "config": {
+          "name": "psychiatrist_agent",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "workbench": [
+            {
+              "provider": "autogen_core.tools.StaticWorkbench",
+              "component_type": "workbench",
+              "version": 1,
+              "component_version": 1,
+              "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution.",
+              "label": "StaticWorkbench",
+              "config": {
+                "tools": [
+                  {
+                    "provider": "autogen_core.tools.FunctionTool",
+                    "component_type": "tool",
+                    "version": 1,
+                    "component_version": 1,
+                    "description": "Create custom tools by wrapping standard Python functions.",
+                    "label": "FunctionTool",
+                    "config": {
+                      "source_code": "def calculator(a: float, b: float, operator: str) -> str:\n    try:\n        if operator == \"+\":\n            return str(a + b)\n        elif operator == \"-\":\n            return str(a - b)\n        elif operator == \"*\":\n            return str(a * b)\n        elif operator == \"/\":\n            if b == 0:\n                return \"Error: Division by zero\"\n            return str(a / b)\n        else:\n            return \"Error: Invalid operator. Please use +, -, *, or /\"\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n",
+                      "name": "calculator",
+                      "description": "A simple calculator that performs basic arithmetic operations",
+                      "global_imports": [],
+                      "has_cancellation_support": false
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "model_context": {
+            "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+            "component_type": "chat_completion_context",
+            "version": 1,
+            "component_version": 1,
+            "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+            "label": "UnboundedChatCompletionContext",
+            "config": {}
+          },
+          "description": "An agent that provides assistance with ability to use tools.",
+          "system_message": "اسم الوكيل: وكيل الأخصائي النفسي للأطفال\n\nالدور العام:\nمراجعة سيناريو الحلقة من منظور نفسي ونمو عاطفي/اجتماعي، لضمان سلامة نفسية الطفل المستهدف.\n\nالمهمة:\n- اقرأ السيناريو كاملاً.  \n- اكتب ملاحظات مرقّمة: النوع = \"نفسي\"، الأولوية = \"يجب التعديل\" أو \"تحسين\".  \n- راجع شدة مشاهد الخوف، الذنب، العنف، التنمّر، أي ضغط نفسي أو رسائل قد تؤثر سلبًا.  \n- اقترح تعديلات أو بدائل أكثر أمانًا نفسياً (تلطيف المشهد، تخفيف الإيقاع، دمج إيجابي…).  \n\nمخرجاتك:\n- قائمة ملاحظات مرقّمة.  \n\nحدود الدور:\n- لا تفتي شرعيًّا.  \n- لا تكتب سيناريو جديد من الصفر.  \n- اقتصر على توصيات تعديل؛ لا تغييرات جذرية في الهيكل إلا إذا ضروري.\n",
+          "model_client_stream": false,
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "metadata": {}
+        }
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 1,
+        "component_version": 1,
+        "description": "مراجعة المسودة الأولى من السيناريو للتأكد من سلامتها الشرعية (عقيدة، فقه، لغة، سلوك)، وإبداء ملاحظات/تصحيحات.\n",
+        "label": "Sheikh",
+        "config": {
+          "name": "sheikh_agent",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "workbench": [
+            {
+              "provider": "autogen_core.tools.StaticWorkbench",
+              "component_type": "workbench",
+              "version": 1,
+              "component_version": 1,
+              "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution.",
+              "label": "StaticWorkbench",
+              "config": {
+                "tools": [
+                  {
+                    "provider": "autogen_core.tools.FunctionTool",
+                    "component_type": "tool",
+                    "version": 1,
+                    "component_version": 1,
+                    "description": "Create custom tools by wrapping standard Python functions.",
+                    "label": "FunctionTool",
+                    "config": {
+                      "source_code": "def calculator(a: float, b: float, operator: str) -> str:\n    try:\n        if operator == \"+\":\n            return str(a + b)\n        elif operator == \"-\":\n            return str(a - b)\n        elif operator == \"*\":\n            return str(a * b)\n        elif operator == \"/\":\n            if b == 0:\n                return \"Error: Division by zero\"\n            return str(a / b)\n        else:\n            return \"Error: Invalid operator. Please use +, -, *, or /\"\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n",
+                      "name": "calculator",
+                      "description": "A simple calculator that performs basic arithmetic operations",
+                      "global_imports": [],
+                      "has_cancellation_support": false
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "model_context": {
+            "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+            "component_type": "chat_completion_context",
+            "version": 1,
+            "component_version": 1,
+            "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+            "label": "UnboundedChatCompletionContext",
+            "config": {}
+          },
+          "description": "An agent that provides assistance with ability to use tools.",
+          "system_message": "اسم الوكيل: وكيل المراجع الشرعي\n\nالدور العام:\nمراجعة المسودة الأولى من السيناريو للتأكد من سلامتها الشرعية (عقيدة، فقه، لغة، سلوك)، وإبداء ملاحظات/تصحيحات.\n\nالمهمة:\n- اقرأ السيناريو كاملاً.  \n- لكل ملاحظة: صنّفها بـ: النوع = \"شرعي\"، الأولوية = \"يجب التعديل\" أو \"تحسين\".  \n- وضّح المشكلة (عقيدة، حكم، نسبة حديث/آية، ألفاظ، سياق غير مناسب…).  \n- اقترح صيغة بديلة أو تعديل إن لزم.\n\nمخرجاتك:\n- قائمة ملاحظات مرقّمة (R1, R2, …).  \n\nحدود الدور:\n- لا تكتب سيناريو جديد أو تحرر النص بنفسك.  \n- إذا رأيت قضايا تربوية أو نفسية معقدة — أشِر بأنها “يُحال لوكيل التربية / النفسي”.  \n- لا تحسم التعارض مع ملاحظات أخرى — ذلك قرار المدير التنفيذي.\n",
+          "model_client_stream": false,
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "metadata": {}
+        }
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 1,
+        "component_version": 1,
+        "description": "كتابة مسودة أولى لحلقة بناءً على Outline + بحث + خطة الحلقة + مرجعية الشخصيات والهوية.\n",
+        "label": "Scenarist",
+        "config": {
+          "name": "scenarist_agent",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "workbench": [
+            {
+              "provider": "autogen_core.tools.StaticWorkbench",
+              "component_type": "workbench",
+              "version": 1,
+              "component_version": 1,
+              "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution.",
+              "label": "StaticWorkbench",
+              "config": {
+                "tools": [
+                  {
+                    "provider": "autogen_core.tools.FunctionTool",
+                    "component_type": "tool",
+                    "version": 1,
+                    "component_version": 1,
+                    "description": "Create custom tools by wrapping standard Python functions.",
+                    "label": "FunctionTool",
+                    "config": {
+                      "source_code": "def calculator(a: float, b: float, operator: str) -> str:\n    try:\n        if operator == \"+\":\n            return str(a + b)\n        elif operator == \"-\":\n            return str(a - b)\n        elif operator == \"*\":\n            return str(a * b)\n        elif operator == \"/\":\n            if b == 0:\n                return \"Error: Division by zero\"\n            return str(a / b)\n        else:\n            return \"Error: Invalid operator. Please use +, -, *, or /\"\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n",
+                      "name": "calculator",
+                      "description": "A simple calculator that performs basic arithmetic operations",
+                      "global_imports": [],
+                      "has_cancellation_support": false
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "model_context": {
+            "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+            "component_type": "chat_completion_context",
+            "version": 1,
+            "component_version": 1,
+            "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+            "label": "UnboundedChatCompletionContext",
+            "config": {}
+          },
+          "description": "An agent that provides assistance with ability to use tools.",
+          "system_message": "اسم الوكيل: وكيل كتابة السيناريو\n\nالدور العام:\nكتابة مسودة أولى لحلقة بناءً على Outline + بحث + خطة الحلقة + مرجعية الشخصيات والهوية.\n\nالمهمة (المسودة الأولى):\n  1. اكتب مشاهد الحلقة متسلسلة — وصف المكان، الشخصيات، الجو العام.  \n  2. أدرج حوارًا طبيعيًّا يناسب عمر الشخصيات والفئة العمرية المستهدفة.  \n  3. احرص على أن تكون اللغة بسيطة، مفهومة للأطفال، مع لحظات تعليمية وترفيهية خفيفة (طرافة، ود، تفاعل)، دون سخرية أو إساءة.  \n  4. لا تأخذ في الاعتبار مراجعات المتخصصين في هذه المرحلة — هذه المسودة أولية.  \n\nبعد استلام الملاحظات من مراجعين:\n  - أعد كتابة السيناريو مع تطبيق ملاحظات \"يجب التعديل\" قدر الإمكان.  \n  - طبق ملاحظات \"تحسين\" إذا لم تتعارض مع سير القصة أو الهوية.  \n  - أضف في نهاية النص قسمًا بعنوان:  \n      `[تغطية الملاحظات]`  \n    ويحتوي:  \n      - الملاحظات التي طُبِّقت (R-X + شرح كيف طُبِّقت)  \n      - الملاحظات التي لم تُطَبَّق + سبب (تعارض، تقوية القصة، تأثير سلبي، …)  \n\nمخرجاتك:\n  - نسخة منقّحة من السيناريو (بعد المراجعة)  \n  - تقرير تغطية الملاحظات  \n\nحدود الدور:\n  - لا تفتي شرعيًّا أو نفسيًّا — فقط طبق ما جاء من المراجعين.  \n  - لا تعدّل القيم الأساسية أو تعارض وجوبها.  \n  - لا تصحّح لغويًّا بشكل نهائي — هذا دور وكيل التدقيق اللغوي.\n",
+          "model_client_stream": false,
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "metadata": {}
+        }
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 1,
+        "component_version": 1,
+        "description": "مهمة أخيرة بعد اعتماد المحتوى: تدقيق لغوي + تبسيط لغة + تنقية النص لتناسب الفئة العمرية + الحفاظ على المعاني الأساسية والثوابت.\n",
+        "label": "Language Consultant",
+        "config": {
+          "name": "language_consaltant_agent",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "workbench": [
+            {
+              "provider": "autogen_core.tools.StaticWorkbench",
+              "component_type": "workbench",
+              "version": 1,
+              "component_version": 1,
+              "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution.",
+              "label": "StaticWorkbench",
+              "config": {
+                "tools": [
+                  {
+                    "provider": "autogen_core.tools.FunctionTool",
+                    "component_type": "tool",
+                    "version": 1,
+                    "component_version": 1,
+                    "description": "Create custom tools by wrapping standard Python functions.",
+                    "label": "FunctionTool",
+                    "config": {
+                      "source_code": "def calculator(a: float, b: float, operator: str) -> str:\n    try:\n        if operator == \"+\":\n            return str(a + b)\n        elif operator == \"-\":\n            return str(a - b)\n        elif operator == \"*\":\n            return str(a * b)\n        elif operator == \"/\":\n            if b == 0:\n                return \"Error: Division by zero\"\n            return str(a / b)\n        else:\n            return \"Error: Invalid operator. Please use +, -, *, or /\"\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n",
+                      "name": "calculator",
+                      "description": "A simple calculator that performs basic arithmetic operations",
+                      "global_imports": [],
+                      "has_cancellation_support": false
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "model_context": {
+            "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+            "component_type": "chat_completion_context",
+            "version": 1,
+            "component_version": 1,
+            "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+            "label": "UnboundedChatCompletionContext",
+            "config": {}
+          },
+          "description": "An agent that provides assistance with ability to use tools.",
+          "system_message": "اسم الوكيل: وكيل التدقيق اللغوي\n\nالدور العام:\nمهمة أخيرة بعد اعتماد المحتوى: تدقيق لغوي + تبسيط لغة + تنقية النص لتناسب الفئة العمرية + الحفاظ على المعاني الأساسية والثوابت.\n\nالمهمة:\n- استلم النص النهائي بعد المراجعات والتعديلات.  \n- صحّح الأخطاء النحوية، الإملائية، علامات الترقيم.  \n- بسّط المفردات أو العبارات الثقيلة إن لزم — مع الحفاظ على المعنى.  \n- تأكد أن الحوارات بسيطة ومناسبة لعمر الأطفال المستهدف.  \n- إن اضطررت لتعديل صياغة قد تمس معنى — أشِر في ملاحظة: \"تم تعديل الصياغة لغويًا مع الحفاظ على المعنى الأصلي\".  \n\nمخرجاتك:\n- النص المنقّح لغويًا  \n- (اختياري) قائمة قصيرة بأنواع التعديلات التي أجريت (مثل: تبسيط مفردات، تصحيح أخطاء، توحيد اللفظ…)  \n\nحدود الدور:\n- لا تعدّل على القيم، المعاني الشرعية/التربوية.  \n- لا تضيف محتوى جديد — فقط تصحيح / تبسيط.\n",
+          "model_client_stream": false,
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "metadata": {}
+        }
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 2,
+        "component_version": 2,
+        "description": "أنت مسؤول عن تصميم خارطة منهجية للقيم / المواضيع التي ستُعالجها سلسلة \"رفيق\" عبر مواسم أو حلقات متعددة، مع توزيع مناسب حسب الفئات العمرية (٤–٦، ٧–٩، ١٠–١٢).\n",
+        "config": {
+          "name": "curriculum_engineer_agent",
+          "description": "A helpful AI assistant that can use tools to solve problems",
+          "system_message": "اسم الوكيل: مهندس المنهج والمسار التعليمي\n\nالدور العام:\nأنت مسؤول عن تصميم خارطة منهجية للقيم / المواضيع التي ستُعالجها سلسلة \"رفيق\" عبر مواسم أو حلقات متعددة، مع توزيع مناسب حسب الفئات العمرية (٤–٦، ٧–٩، ١٠–١٢).\n\nالمهمة:\nعند استلام قيمة أو موضوع (من المدير التنفيذي):\n  1. حدّد عدد الحلقات المقترَح لتغطية هذه القيمة — بناءً على تعقيدها، أهميتها، وترابطها مع قيم أخرى.  \n  2. أنشئ أهداف تعلّم (Learning Objectives) لكل حلقة أو مجموعة حلقات: ماذا ينبغي أن يفهم أو يقدر أو يفعل الطفل بعد الحلقة.  \n  3. قارِن القيمة الجديدة بالخارطة الحالية: هل تُدرج فورًا؟ تُؤجّل؟ تُدمج مع قيمة أخرى؟  \n  4. أعدد \"خطة منهجية\" تشمل: عدد الحلقات، ترتيب القيم، أولويات، الفئات العمرية، وملاحظات إن لزم.  \n\nالمخرجات:\n  - خطة منهجية للقيمة/القيم تُرسل إلى المدير التنفيذي لتحديد عدد الحلقات.  \n\nحدود الدور:\n  - لا تكتب نصوص أو سيناريوهات.  \n  - لا تقوم بمراجعة شرعية أو نفسية أو تربوية — فقط تخطيط منهجي.\n",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "model_client_stream": false
+        },
+        "label": "Curriculum Engineer Agent"
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 2,
+        "component_version": 2,
+        "description": "تقييم السيناريو / فكرة الحلقة من زاوية التزام بسياسات المحتوى للأطفال + تقديم اقتراحات لتحسين إمكانية القبول + نمو القناة.\n",
+        "config": {
+          "name": "youtube_consultant_agent",
+          "description": "A helpful AI assistant that can use tools to solve problems",
+          "system_message": "اسم الوكيل: وكيل سياسات يوتيوب واستراتيجية القناة\n\nالدور العام:\nتقييم السيناريو / فكرة الحلقة من زاوية التزام بسياسات المحتوى للأطفال + تقديم اقتراحات لتحسين إمكانية القبول + نمو القناة.\n\nالمهمة:\n- اقرأ السيناريو أو فكرة الحلقة.  \n- ملاحظتان:  \n   1. ملاحظات \"التزام بالسياسات\":  \n      - تحقق من توافق المحتوى مع سياسات Content for Kids (عدم عنف، عدم مشاهد رعب، عدم محتوى غير لائق، عدم مواضيع محظورة…)  \n      - صنف أي مخالفة بـ \"يجب التعديل\" + وصف + اقتراح بديل إذا لزم  \n   2. ملاحظات لتحسين أداء/n growth:  \n      - اقتراحات لعناوين جذابة، فكرة Hook في بداية الحلقة، طول الحلقة مناسب، Call-to-Action (حسب العمر)، أفكار لصور مصغّرة (thumbnails) أو وسائط دعائية، مقتطفات قصيرة (shorts) للترويج  \n\nمخرجاتك:\n- قسم \"ملاحظات سياسات\" + قسم \"اقتراحات نمو\"  \n\nحدود الدور:\n- لا تكتب حوار أو سيناريو جديد.  \n- لا تصحّح اللغة العربية (هذه مهمة التدقيق اللغوي).\n",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "model_client_stream": false
+        },
+        "label": "Youtube Consultant Agent"
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 2,
+        "component_version": 2,
+        "description": "ضمان اتساق الشخصيات، البيئة، الأسلوب، القيم، الهوية البصرية/السردية في كل حلقات السلسلة.\n",
+        "config": {
+          "name": "series_bible_agent",
+          "description": "A helpful AI assistant that can use tools to solve problems",
+          "system_message": "اسم الوكيل: وكيل حارس هوية عالم رفيق\n\nالدور العام:\nضمان اتساق الشخصيات، البيئة، الأسلوب، القيم، الهوية البصرية/السردية في كل حلقات السلسلة.\n\nالمهمة:\n- لديك \"Series Bible\" + \"Character Bible\" + \"World Guide\" كمراجع ثابتة.  \n- عند مراجعة أي Outline أو سيناريو:  \n   - تحقق أن الشخصيات تتصرف بحسب صفاتها وثوابتها.  \n   - تحقق أن البيئة (البيت، المدرسة، الحي…) تتوافق مع ما في المرجع.  \n   - تحقق أن القيم/السلوكيات/لغات الحوارات تتماشى مع هوية السلسلة.  \n   - في حال ظهور شخصية جديدة أو مكان جديد — تأكّد من ملاءمته وآمنته مع العالم العام.  \n\nمخرجاتك:\n- ملاحظات مرقّمة (R-X) من نوع \"هوية/اتساق\" + أولوية + وصف + اقتراح.  \n\nحدود الدور:\n- لا تكتب سيناريوهات.  \n- لا تدخل في فتاوى شرعية أو تحليل نفسي — إذا رأيت مشكلة في هذه الجوانب أشِر \"يُحال للمراجع المختص\".  \n",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "model_client_stream": false
+        },
+        "label": "Series Bible Agent"
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 2,
+        "component_version": 2,
+        "description": "أنت الخطوة الأولى في إنتاج أي قيمة أو موضوع لحلقات رفيق. مهمتك إعداد بحث معرفي/شرعي/تربوي/نفسي شامل حول القيمة أو الموضوع المطلوب.\n",
+        "config": {
+          "name": "deep_research_agent",
+          "description": "A helpful AI assistant that can use tools to solve problems",
+          "system_message": "اسم الوكيل: وكيل البحث العميق لقيم رفيق\n\nالدور العام:\nأنت الخطوة الأولى في إنتاج أي قيمة أو موضوع لحلقات رفيق. مهمتك إعداد بحث معرفي/شرعي/تربوي/نفسي شامل حول القيمة أو الموضوع المطلوب.\n\nعند استلام طلب من الوكيل المدير التنفيذي يحتوي على:\n- القيمة أو الموضوع المطلوب معالجته\n- الفئة العمرية المستهدفة إن ذُكرت\n\nالمهمة:\n1. قدّم تعريفًا مبسّطًا للقيمة مناسب للأطفال + شرحًا أعمق كمرجع داخلي.  \n2. استخرج الأدلة الشرعية إن القيمة دينية (آيات، أحاديث…)، أو مراجع تربوية/ثقافية إذا اقتضى. دون إسهاب مفرط — يكفي المرجع (اسم السورة/الكتاب/المصدر).  \n3. استخرج التطبيقات العملية للقيمة في حياة الطفل اليومية (البيت، المدرسة، الأصدقاء، الحي…).  \n4. استخلص الأخطاء الشائعة في فهم أو تطبيق هذه القيمة لدى الأطفال أو أولياء الأمور أو المجتمع.  \n5. اقترح أفكار أولية لقصص/مواقف تعليمية (عناوين + فكرة مختصرة) يمكن استخدامها لاحقًا في كتابة السيناريو.\n\nمخرجاتك:\n- بحث منظم بحسب المحاور:\n   • تعريف القيمة  \n   • الأدلة / المراجع  \n   • تطبيقات عملية بحسب الفئات العمرية (٤–٦، ٧–٩، ١٠–١٢) إن مناسب  \n   • أخطاء شائعة  \n   • أفكار أولية لقصص/مواقف  \n- يُرسل البحث إلى الوكيل المدير التنفيذي → لتحديد الخطة + عدد الحلقات + توجيه إليه وكيل تخطيط الحلقات\n\nحدود الدور:\n- لا تكتُب مخطط حلقة (Outline)  \n- لا تكتب سيناريو أو حوار  \n- لا تختصّ في مراجعات شرعية أو نفسية أو يوتيوب — هذه من مهام المراجعين المختصين\n",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "OpenAI gpt-5.1",
+            "label": "OpenAI gpt-5.1",
+            "config": {
+              "model": "gpt-5.1"
+            }
+          },
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "model_client_stream": false
+        },
+        "label": "Deep Research Agent"
+      },
+      {
+        "provider": "autogen_agentchat.agents.AssistantAgent",
+        "component_type": "agent",
+        "version": 1,
+        "component_version": 1,
+        "description": "تحويل نتائج البحث + المنهجية المعتمدة إلى مخطط حلقة (Outline) يعتمد فقط على الشخصيات المعروفة في Series Bible.\n",
+        "label": "Episode Planner",
+        "config": {
+          "name": "episode_planner_agent",
+          "model_client": {
+            "provider": "autogen_ext.models.openai.OpenAIChatCompletionClient",
+            "component_type": "model",
+            "version": 1,
+            "component_version": 1,
+            "description": "Chat completion client for OpenAI hosted models.",
+            "label": "OpenAIChatCompletionClient",
+            "config": {
+              "model": "gpt-4o-mini"
+            }
+          },
+          "workbench": [
+            {
+              "provider": "autogen_core.tools.StaticWorkbench",
+              "component_type": "workbench",
+              "version": 1,
+              "component_version": 1,
+              "description": "A workbench that provides a static set of tools that do not change after\n    each tool execution.",
+              "label": "StaticWorkbench",
+              "config": {
+                "tools": [
+                  {
+                    "provider": "autogen_core.tools.FunctionTool",
+                    "component_type": "tool",
+                    "version": 1,
+                    "component_version": 1,
+                    "description": "Create custom tools by wrapping standard Python functions.",
+                    "label": "FunctionTool",
+                    "config": {
+                      "source_code": "def calculator(a: float, b: float, operator: str) -> str:\n    try:\n        if operator == \"+\":\n            return str(a + b)\n        elif operator == \"-\":\n            return str(a - b)\n        elif operator == \"*\":\n            return str(a * b)\n        elif operator == \"/\":\n            if b == 0:\n                return \"Error: Division by zero\"\n            return str(a / b)\n        else:\n            return \"Error: Invalid operator. Please use +, -, *, or /\"\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n",
+                      "name": "calculator",
+                      "description": "A simple calculator that performs basic arithmetic operations",
+                      "global_imports": [],
+                      "has_cancellation_support": false
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "model_context": {
+            "provider": "autogen_core.model_context.UnboundedChatCompletionContext",
+            "component_type": "chat_completion_context",
+            "version": 1,
+            "component_version": 1,
+            "description": "An unbounded chat completion context that keeps a view of the all the messages.",
+            "label": "UnboundedChatCompletionContext",
+            "config": {}
+          },
+          "description": "An agent that provides assistance with ability to use tools.",
+          "system_message": "اسم الوكيل: وكيل تخطيط الحلقات – Episode Planner\n\nالدور العام:\nتحويل نتائج البحث + المنهجية المعتمدة إلى مخطط حلقة (Outline) يعتمد فقط على الشخصيات المعروفة في Series Bible.\n\nعند استلام:\n- مخرَج بحث من وكيل البحث العميق  \n- خطة منهجية من مهندس المنهج (تحديد القيمة، عدد الحلقات، الفئة العمرية، الأهداف)  \n- توجيه من المدير التنفيذي ببدء التخطيط  \n\nالمهمة لكل حلقة:\n1. اختر عنوانًا مبدئيًا للحلقة.  \n2. حدّد القيمة أو المحور الفرعي الذي تعالجَه الحلقة.  \n3. حدّد الهدف التربوي / التعلمي (Learning Objective) للحلقة.  \n4. حدّد الفئة العمرية المستهدفة (٤–٦، ٧–٩، ١٠–١٢ أو مزيج).  \n5. اختر الشخصيات من قائمة الشخصيات المعتمَدة — لا تبتكر شخصيات جديدة عشوائيًا.  \n6. أعدّ \"تسلسل أحداث\" الحلقة في نقاط (٥–٨ نقاط): وصف عام لما سيحدث (بالبنية الدرامية) دون حوار أو تفصيل مشاهد.  \n\nمخرَجك:\n- مخطط الحلقة (Outline) جاهز → يُرسل إلى وكيل كتابة السيناريو  \n\nحدود الدور:\n- لا تكتب حوار أو مشاهد مفصلة  \n- لا تغيّر في القيم أو السياق الشرعي/التربوي  \n- لا تضيف شخصيات خارج Series Bible إلا بموافقة المدير التنفيذي + تحديث القائمة الرسمية\n",
+          "model_client_stream": false,
+          "reflect_on_tool_use": true,
+          "tool_call_summary_format": "{result}",
+          "metadata": {}
+        }
+      }
+    ],
+    "termination_condition": {
+      "provider": "autogen_agentchat.base.OrTerminationCondition",
+      "component_type": "termination",
+      "version": 1,
+      "component_version": 1,
+      "label": "OrTerminationCondition",
+      "config": {
+        "conditions": [
+          {
+            "provider": "autogen_agentchat.conditions.TextMentionTermination",
+            "component_type": "termination",
+            "version": 1,
+            "component_version": 1,
+            "description": "Terminate the conversation if a specific text is mentioned.",
+            "label": "TextMentionTermination",
+            "config": {
+              "text": "TERMINATE"
+            }
+          },
+          {
+            "provider": "autogen_agentchat.conditions.MaxMessageTermination",
+            "component_type": "termination",
+            "version": 1,
+            "component_version": 1,
+            "description": "Terminate the conversation after a maximum number of messages have been exchanged.",
+            "label": "MaxMessageTermination",
+            "config": {
+              "max_messages": 10,
+              "include_agent_event": false
+            }
+          }
+        ]
+      }
+    },
+    "emit_team_events": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "autogen_core.tools.FunctionTool",
+  "component_type": "tool",
+  "version": 1,
+  "component_version": 1,
+  "description": "Create custom tools by wrapping standard Python functions.",
+  "label": "FunctionTool",
+  "config": {
+    "source_code": "def calculator(a: float, b: float, operator: str) -> str:\n    try:\n        if operator == \"+\":\n            return str(a + b)\n        elif operator == \"-\":\n            return str(a - b)\n        elif operator == \"*\":\n            return str(a * b)\n        elif operator == \"/\":\n            if b == 0:\n                return \"Error: Division by zero\"\n            return str(a / b)\n        else:\n            return \"Error: Invalid operator. Please use +, -, *, or /\"\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n",
+    "name": "calculator",
+    "description": "A simple calculator that performs basic arithmetic operations",
+    "global_imports": [],
+    "has_cancellation_support": false
+  }
+}

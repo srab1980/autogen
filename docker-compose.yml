@@ -1,0 +1,17 @@
+services:
+  autogen-studio:
+    build: .
+    image: autogen-studio-local
+    container_name: autogen-studio
+    ports:
+      - "8081:8081"
+    volumes:
+      # Mount the current directory's database and data to the container
+      - .:/app/data
+      - ./autogen:/app/autogen
+    environment:
+      - AUTOGENSTUDIO_DATABASE_URI=sqlite:////app/data/autogen04202.db
+    restart: unless-stopped
+    # Add extra hosts if needed for local development
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

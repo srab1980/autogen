@@ -1,10 +1,10 @@
 .git
-.env
+.github
 .venv
+.venv_new
 __pycache__
 *.pyc
-temp_gallery.json
-dist
-build
-node_modules
+*.pyo
+*.pyd
+.DS_Store
 autogenstudio-pypi-venv

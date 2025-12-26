@@ -1,43 +1,42 @@
-# Stage 1: Build Frontend
-FROM node:18-alpine AS frontend-builder
-# Copy entire context to debug/ensure availability
-# Copy entire context to debug/ensure availability
-COPY . /app/source/
-# DEBUG: List all files to see what was copied
-RUN find /app/source -maxdepth 2 -not -path '*/.*'
-WORKDIR /app/source/autogen/python/packages/autogen-studio/frontend
-RUN npm install
-RUN npm run build
-
-# Stage 2: Final Image
 FROM python:3.11-slim
+
+# Set working directory
 WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    libpq-dev \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy backend code FROM THE SOURCE STAGE (ensuring we have it)
-COPY --from=frontend-builder /app/source/autogen/python/packages/autogen-studio /app/autogen-studio
+# Copy local source code
+# We copy the 'autogen' directory which contains all packages
+COPY autogen /app/autogen
 
-# Copy built frontend assets to the python package UI directory
-# Ensure the target directory exists
-RUN mkdir -p /app/autogen-studio/autogenstudio/web/ui
-# Overlay built assets
-COPY --from=frontend-builder /app/source/autogen/python/packages/autogen-studio/frontend/public /app/autogen-studio/autogenstudio/web/ui
+# Install packages from local source in dependency order
+# 1. Autogen Core
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -e /app/autogen/python/packages/autogen-core
 
-# Install the package
-WORKDIR /app/autogen-studio
-RUN pip install --no-cache-dir .
+# 2. Autogen AgentChat (depends on core)
+RUN pip install --no-cache-dir -e /app/autogen/python/packages/autogen-agentchat
 
-# Environment variables
-ENV PYTHONUNBUFFERED=1
-ENV PORT=8080
+# 3. Autogen Ext (depends on core, agentchat)
+RUN pip install --no-cache-dir -e /app/autogen/python/packages/autogen-ext
+
+# 4. Autogen Studio (depends on all above)
+RUN pip install --no-cache-dir -e /app/autogen/python/packages/autogen-studio
 
 # Expose the port
-EXPOSE 8080
+EXPOSE 8081
 
-# Run the application
-CMD ["autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8080"]
+# Set the entrypoint
+# We look for the main database in the mounted volume
+ENV AUTOGENSTUDIO_DATABASE_URI="sqlite:////app/data/autogen04202.db"
+ENV AUTOGENSTUDIO_APPDIR="/app/data"
+
+# Create a directory for data
+RUN mkdir -p /app/data
+
+# Command to run the application
+CMD ["autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081"]
