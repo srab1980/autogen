@@ -9,23 +9,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy local source code
-# We copy the 'autogen' directory which contains all packages
-COPY autogen /app/autogen
+# Copy requirements file
+COPY requirements.txt /app/
 
-# Install packages from local source in dependency order
-# 1. Autogen Core
+# Install Python packages from PyPI
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -e /app/autogen/python/packages/autogen-core
+    pip install --no-cache-dir -r requirements.txt
 
-# 2. Autogen AgentChat (depends on core)
-RUN pip install --no-cache-dir -e /app/autogen/python/packages/autogen-agentchat
-
-# 3. Autogen Ext (depends on core, agentchat)
-RUN pip install --no-cache-dir -e /app/autogen/python/packages/autogen-ext
-
-# 4. Autogen Studio (depends on all above)
-RUN pip install --no-cache-dir -e /app/autogen/python/packages/autogen-studio
+# Copy application files (optional - the app works standalone)
+# These are utility scripts and can be mounted as volumes if needed
 
 # Expose the port
 EXPOSE 8081

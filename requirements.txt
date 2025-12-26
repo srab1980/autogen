@@ -1,0 +1,5 @@
+# AutoGen Studio and Dependencies
+# This file helps deployment platforms detect this as a Python project
+
+# Install autogenstudio which will pull in compatible versions of dependencies
+autogenstudio>=0.4.2
