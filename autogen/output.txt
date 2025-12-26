@@ -1,0 +1,12 @@
+Connecting to DB at sqlite:///C:\Users\srab1\.autogenstudio\database.sqlite
+2025-12-08 19:37:52.603 | ERROR    | autogenstudio.database.db_manager:upsert:192 - Error while updating/creating Gallery: (builtins.TypeError) Object of type GalleryConfig is not JSON serializable
+Extracted agent: AssistantAgent
+Extracted agent: AssistantAgent
+Extracted agent: AssistantAgent
+Extracted agent: AssistantAgent
+Extracted agent: AssistantAgent
+Total extracted agents: 5
+Upserting gallery...
+Gallery upsert result: Gallery Created Successfully, Status: False
+[SQL: INSERT INTO gallery (id, created_at, updated_at, user_id, version, config) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: [{'config': GalleryConfig(id='default_gallery', name='Imported Agents Gallery', url=None, metadata=GalleryMetadata(author='autogen-studio', version='1. ... (8370 characters truncated) ... atetime(2025, 12, 8, 19, 37, 52, 573934), 'id': 1, 'updated_at': datetime.datetime(2025, 12, 8, 19, 37, 52, 573934), 'user_id': 'guestuser@gmail.com'}]]

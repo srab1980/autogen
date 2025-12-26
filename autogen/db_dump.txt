@@ -1,0 +1,11 @@
+Checking DB at: C:\Users\srab1\.autogenstudio\database.sqlite
+
+--- Gallery Table ---
+Row count: 1
+ID: 1, User: guestuser@gmail.com
+  Agent count in config: 5
+    - assistant_agent
+    - planner_agent
+    - local_agent
+    - language_agent
+    - travel_summary_agent
