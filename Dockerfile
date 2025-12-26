@@ -38,5 +38,9 @@ ENV AUTOGENSTUDIO_APPDIR="/app/data"
 # Create a directory for data
 RUN mkdir -p /app/data
 
+# Copy the database from the root to the data directory
+COPY autogen04202.db /app/data/autogen04202.db
+
+
 # Command to run the application
 CMD ["autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8081"]
